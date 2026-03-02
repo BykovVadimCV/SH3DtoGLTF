@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: sh3d2gltf
+Version: 1.0.0
+Summary: Convert Sweet Home 3D (.sh3d) files to GLTF/GLB
+Author: sh3d2gltf contributors
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Graphics :: 3D Modeling
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.20
+Requires-Dist: trimesh[easy]>=3.15
+Requires-Dist: Pillow>=8.0
+Requires-Dist: shapely>=1.8
+Provides-Extra: full
+Requires-Dist: pygltflib>=1.15; extra == "full"
+Requires-Dist: lxml>=4.6; extra == "full"
+Requires-Dist: networkx>=2.5; extra == "full"
+Requires-Dist: scipy>=1.7; extra == "full"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Dynamic: author
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

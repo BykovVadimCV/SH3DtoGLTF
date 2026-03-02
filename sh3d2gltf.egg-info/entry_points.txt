@@ -1,0 +1,2 @@
+[console_scripts]
+sh3d2gltf = sh3d2gltf.cli:main

@@ -1,0 +1,37 @@
+# ============================================================
+# requirements.txt - sh3d2gltf dependencies
+# ============================================================
+
+# ── Core (required) ──────────────────────────────────────────
+numpy>=1.20
+trimesh[easy]>=3.15
+Pillow>=8.0
+shapely>=1.8
+
+# ── Mesh format loaders (pulled in by trimesh[easy]) ────────
+# These ensure OBJ, DAE (Collada), 3DS, and STL loading works.
+# trimesh[easy] installs most of them, but we pin key ones:
+networkx>=2.5
+scipy>=1.7
+chardet>=4.0
+
+# ── XML parsing ──────────────────────────────────────────────
+# stdlib xml.etree.ElementTree is used by default;
+# lxml is optional but faster for large Home.xml files:
+lxml>=4.6
+
+# ── GLTF post-processing (lights, cameras, Draco flag) ──────
+pygltflib>=1.15
+
+# ── Triangulation engine for room polygons ───────────────────
+mapbox-earcut>=1.0
+
+# ── Optional: Collada (.dae) model support ───────────────────
+pycollada>=0.8
+
+# ── Optional: 3DS model support ─────────────────────────────
+# (trimesh uses its own parser, but this improves coverage)
+
+# ── Optional: Draco compression (actual encoding) ───────────
+# Requires system-level draco tools or:
+# gltf-transform CLI (npm install --global @gltf-transform/cli)
